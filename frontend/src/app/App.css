@@ -1,1 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&display=swap');
 @import "tailwindcss";
+
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 200;
+  letter-spacing: 0.025em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 200;
+}
+
+strong,
+b {
+  font-weight: 200;
+}
