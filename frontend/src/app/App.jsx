@@ -6,7 +6,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import * as Y from "yjs";
 import { SocketIOProvider } from "y-socket.io";
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:3000";
+const BACKEND_URL = "/";
 
 function App() {
   const currentPath = window.location.pathname;
@@ -131,8 +131,8 @@ function App() {
       <Toaster position="bottom-right" />
       <main className='h-screen w-full bg-zinc-950 text-white flex items-center justify-center relative overflow-hidden'>
 
-        <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-emerald-600/20 rounded-full blur-[120px] pointer-events-none"></div>
-        <div className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-cyan-600/20 rounded-full blur-[120px] pointer-events-none"></div>
+        <div className="absolute top-[-10%] left-[-10%] w-125 h-125 bg-emerald-600/20 rounded-full blur-[120px] pointer-events-none"></div>
+        <div className="absolute bottom-[-10%] right-[-10%] w-125 h-125 bg-cyan-600/20 rounded-full blur-[120px] pointer-events-none"></div>
 
         <div className='z-10 bg-zinc-900/40 backdrop-blur-2xl border border-zinc-700/50 p-10 rounded-3xl shadow-2xl flex flex-col gap-6 w-full max-w-md items-center text-center'>
           {children}
@@ -144,8 +144,8 @@ function App() {
   if (currentPath !== "/" && currentPath !== "") {
     return (
       <main className='h-screen w-full bg-zinc-950 text-white flex flex-col items-center justify-center relative overflow-hidden'>
-        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div className="absolute top-1/4 left-1/4 w-125 h-125 bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-125 h-125 bg-purple-600/10 rounded-full blur-[120px] pointer-events-none"></div>
         <div className='z-10 flex flex-col items-center text-center p-8 bg-zinc-900/40 backdrop-blur-2xl border border-zinc-700/50 rounded-3xl shadow-2xl max-w-lg w-full'>
           <div className="relative mb-6">
             <div className="absolute inset-0 bg-indigo-500/20 rounded-full blur-xl animate-pulse"></div>
@@ -278,8 +278,8 @@ function App() {
 
   return (
     <main className='h-screen w-full bg-zinc-950 text-white flex flex-col items-center justify-center relative overflow-hidden'>
-      <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute top-1/4 left-1/4 w-125 h-125 bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-125 h-125 bg-purple-600/10 rounded-full blur-[120px] pointer-events-none"></div>
       <div className='z-10 flex flex-col items-center text-center p-8 bg-zinc-900/40 backdrop-blur-2xl border border-zinc-700/50 rounded-3xl shadow-2xl max-w-lg w-full'>
         <div className="relative mb-6">
           <div className="absolute inset-0 bg-indigo-500/20 rounded-full blur-xl animate-pulse"></div>
