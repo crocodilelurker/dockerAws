@@ -6,7 +6,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import * as Y from "yjs";
 import { SocketIOProvider } from "y-socket.io";
 
-const BACKEND_URL = "/";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "/";
 
 function App() {
   const currentPath = window.location.pathname;
@@ -119,12 +119,12 @@ function App() {
       name: username
     });
 
-    const monacoBinding = new MonacoBinding(
+    new MonacoBinding(
       ytext,
       editorRef.current.getModel(),
       new Set([editorRef.current]),
       provider.awareness
-    )
+    );
   };
   const renderCard = (children) => (
     <>
